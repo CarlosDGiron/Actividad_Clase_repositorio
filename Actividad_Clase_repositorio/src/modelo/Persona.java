@@ -9,11 +9,18 @@ package modelo;
  *
  * @author cana0
  */
-abstract class Persona {
+public class Persona {
     protected String nombres, apellidos, direccion, fechaDeNacimiento, numeroDeTelefono;
 
-    public Persona() {
+    public Persona(String nombres, String apellidos, String direccion, String fechaDeNacimiento, String numeroDeTelefono) {
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.direccion = direccion;
+        this.fechaDeNacimiento = fechaDeNacimiento;
+        this.numeroDeTelefono = numeroDeTelefono;
     }
+
+  
 
     protected String getNombres() {
         return nombres;
